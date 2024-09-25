@@ -5,12 +5,12 @@ import Navbar from './UI/Navbar';
 export default function Nav() {
   // The Navbar UI component will render each of the Link elements in the links prop
   return (
-    <Navbar
+    <Navbar className="navbar navbar-expand navbar-light bg-light navbar-collapse"
       links={[
         // <Link key={1} className="nav-link text-light" to="/">
         //   Home
         // </Link>,
-        <Link key={2} className="nav-link text-light" to="/aboutme">
+        <Link key={2} className="nav-link text-light" to="/about">
           About Me
         </Link>,
         <Link key={3} className="nav-link text-light" to="/portfolio">
