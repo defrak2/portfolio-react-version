@@ -8,12 +8,14 @@ export default function AboutMePage() {
           alt="Responsive image"
         />
       </div>
-      <p className="about-paragraph text-center">
-        A driven and ambitious individual with a passion for web development.
-        Has a solid understanding and experience with full stack development.
-        Excited to work on projects that combine creativity, functionality, and
-        innovation.
-      </p>
+      <div className="paragraph-container">
+        <h5 className="about-paragraph text-center">
+          A driven and ambitious individual with a passion for web development.
+          Has a solid understanding and experience with full stack development.
+          Excited to work on projects that combine creativity, functionality,
+          and innovation.
+        </h5>
+      </div>
     </div>
   );
 }

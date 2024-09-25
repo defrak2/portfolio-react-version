@@ -2,7 +2,7 @@ export default function PortfolioPage() {
   return (
     <div className="container">
       <div className="row">
-        <div className="card col-sm" style={{ width: "18rem" }}>
+        <div className="card col-sm card-container" style={{ width: "18rem" }}>
           <img
             className="card-img-top"
             src="./assets/images/screenshot1.png"
@@ -11,7 +11,7 @@ export default function PortfolioPage() {
           <div className="card-body">
             <h5 className="card-title">PWA Text Editor</h5>
             <p className="card-text">
-              A Progressive Web Application for text editing.
+              A Progressive Web Application for text editing. This web application is available on render but also can be installed on the local computer or phone to be utilized in the PWA format. It utilizes JavaScript and IndexedDB for it's logic and storage of data.
             </p>
             <div className="button-container">
               <a
@@ -38,7 +38,7 @@ export default function PortfolioPage() {
           <div className="card-body">
             <h5 className="card-title">Bored Game Generator</h5>
             <p className="card-text">
-              A site to search for games based on your mood. This group project
+              This site is designed for a user to search for games based on their mood. This group project
               utilizes JavaScript, PostgreSQL, Handlebars and Bulma.
             </p>
             <div className="button-container">
