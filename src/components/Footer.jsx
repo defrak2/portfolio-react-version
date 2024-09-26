@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-4">
+    <footer className="bg-custom-blue text-white text-center py-4">
       <div className="container">
         <p className="mb-0">Created by Kendra</p>
         <div className="social-links">

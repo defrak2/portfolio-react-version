@@ -50,7 +50,7 @@ const WorkItems = () => {
   return (
     <section className="work-grid">
       {works.map((work, index) => (
-        <div key={index} className="grid-item">
+        <div key={index} className="grid-item grid-custom">
           <WorkItem {...work} />
         </div>
       ))}
@@ -59,9 +59,9 @@ const WorkItems = () => {
 };
 
 const WorkItem = ({ title, image, description, deployedLink, repoLink }) => (
-  <div className="container">
-      <div className="row">
-  <div className="card col-sm" style={{ width: "18rem" }}>
+  <div className="container ">
+      <div className="row ">
+  <div className="card col-sm bg-custom-ltblue" style={{ width: "18rem" }}>
   <img
     className="card-img-top"
     src={image}
