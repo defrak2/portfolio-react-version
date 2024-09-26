@@ -1,3 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root { 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+main {
+  flex: 1; 
+}
+.contact-h1 {
+  text-align: center;
+  padding: 1rem;
+}
+#contact-page {
+  padding: 2rem;
+}
+
+
 .header-name {
   background-color: #3d4769;
   text-align: center;
@@ -32,7 +55,10 @@
 .resume-p {
   text-align: center;
 }
-
+.about-h1 {
+  text-align: center;
+  width: 100%;
+}
 
 .headshot {
   max-width: 20rem;
@@ -40,6 +66,7 @@
 }
 .about-paragraph {
   max-width: 60%;
+  padding-bottom: 2rem;
 }
 .paragraph-container {
   display: flex;

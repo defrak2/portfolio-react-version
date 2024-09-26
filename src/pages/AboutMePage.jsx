@@ -1,6 +1,7 @@
 export default function AboutMePage() {
   return (
     <div className="container pt-4 text-center about-container">
+            <h1 className="about-h1">About</h1>
       <div className="text-center">
         <img
           src="./assets/images/headshot.jpg"
