@@ -207,3 +207,102 @@ You are required to submit BOTH of the following for review:
 ---
 
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
+
+
+Rene Trevino  to  Everyone 9:38 PM
+import React from 'react';
+import './WorkGrid.css';
+
+const WorkItem = ({ title, image, description, deployedLink, repoLink }) => (
+  <div className="work-item">
+    <img src={image} alt={title} />
+    <h2>{title}</h2>
+    <p>{description}</p>
+    <a href={deployedLink}>View Project</a>
+    <a href={repoLink}>GitHub Repo</a>
+  </div>
+);
+
+const WorkGrid = ({ works }) => {
+  return (
+    <section className="work-grid">
+      {works.map((work, index) => (
+        <div key={index} className="grid-item">
+          <WorkItem {...work} />
+        </div>
+      ))}
+    </section>
+  );
+};
+
+export default WorkGrid;
+import React from 'react';
+import WorkGrid from './WorkGrid';
+
+const works = [
+  {
+    title: 'Project 1',
+    image: 'path/to/image1.jpg',
+    description: 'Description for Project 1',
+    deployedLink: 'https://project1.example.com',
+    repoLink: 'https://github.com/user/project1'
+  },
+  // ... more work items ...
+];
+
+function App() {
+  return (
+    <div className="App">
+      <h1>My Projects</h1>
+      <WorkGrid works={works} />
+    </div>
+  );
+}
+
+export default App;
+/* WorkGrid.css */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.work-item h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.work-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.work-item a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

@@ -1,3 +1,15 @@
+.header-name {
+  background-color: #3d4769;
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+}
+.portfolio-name {
+  color: #3d4769;
+  text-align: center;
+  padding: 1rem;
+}
+
 .headshot {
   max-width: 20rem;
   
@@ -34,9 +46,67 @@
 }
 
 
-@media (max-width: 1000px) {
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.work-item h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.work-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.work-item a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+
+
+@media (max-width: 1044px) {
   .navbar-collapse {
       display: block !important;  
       height: auto !important;    
   }
+  .work-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
 }
+@media (max-width: 768px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
